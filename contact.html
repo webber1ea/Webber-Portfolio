@@ -6,7 +6,9 @@
  <title>Contact Me!</title>
 <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+<script Language="javascript"></script>
 </head>
+
 <body>
   <html class="contact-bg">
 <div class="navigation">
@@ -17,7 +19,7 @@
   </ul>
 </div>
 <header> Send me an email! </header>
-<div class="form">
+<div id="form">
   <form>
     <fieldset>
     <legend>Personal Information</legend>
@@ -29,13 +31,41 @@
         <input type="text" name="email">
         Message:
         <textarea name="message"></textarea>
-        <input type="submit" value="Submit" class="submit">
+        <input type="button" onclick="myFunction()" value="Submit">
+        <input type="button" onclick="myFunction()" value="Reset">
+        <script>
+        function myFunction() {
+          document.getElementById("frm1").reset();
+        }
+        </script>
+        <script>
+        function myFunction() {
+          document.getElementById("frm1").submit();
+          }
+          </script>
+          </legend>
+        </fieldset>
     </form>
-</legend>
-</form>
 </div>
+<div id="input">
+<p>Try this!</p>
+<input type="text" id="theText" value="Type here....">
+<p>Now click the "Try This" button!</p>
+<p id="demo"></p>
+<button onclick="myFunction()">Try This</button>
+<script>
+function myFunction()  {
+  var x =
+  document.getElementById("theText").value;
+  document.getElementById("demo").innerHTML = x;
+  document.getElementById("demo").style.textTransform ="uppercase";
+}
+</script>
+</div>
+
+
+
+
+
 </body>
-
-
-
 </html>

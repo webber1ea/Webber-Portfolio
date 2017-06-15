@@ -118,11 +118,9 @@ li a:hover:not(.active) {
   align-items: center;
 }
 
-.form {
-  text-align: center;
-  display:inline-block;
-  margin: 0 auto;
-  border: 10px dashed white;
+#form {
+display: list-item;
+text-align: center;
 }
 
 .fig {
@@ -130,8 +128,20 @@ li a:hover:not(.active) {
   font-size: 20px;
 }
 
-.submit {
-  background-color: #008CBA;
-  font-size: 20px;
-  color: white;
+.display {
+  position: relative;
+  text-align: center;
+  display:inline-block;
+  margin: 0 auto;
+  clear:both;
+}
+
+#input {
+  display:list-item;
+  text-align: center;
+}
+
+#abtme {
+  position: inhert;
+  border: 10px dotted white;
 }
